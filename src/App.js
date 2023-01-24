@@ -7,8 +7,8 @@ import Projects from "./pages/Projects/Projects";
 import Contacts from "./pages/Contacts/Contacts";
 import Shop from "./pages/Shop/Shop";
 import {Page404} from "./pages/Page404/Page404";
+import "./App.css"
 
-import "./App.css";
 
 function App() {
   
