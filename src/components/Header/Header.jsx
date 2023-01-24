@@ -1,3 +1,4 @@
+import React from 'react'
 import './Header.scss'
 
 function Header () {
@@ -13,23 +14,18 @@ return (
             </div>
             <div className="row align-items-center">
               <div className="col-xl-8 col-lg-12">
-                <div classname="header-top-left">
+                <div className="header-top-left">
                   <div className="contact-item">
                     <i className="flaticon-call"></i>
                     Make A Call:
-                    <a href="tel:12122555511">+1 (212) 255-5511</a>
+                    <a href="tel:+7800">+7 (800) 255-5511</a>
                   </div>
                   <div className="contact-item">
                     <i className="flaticon-envelope-1"></i>
                     Send Message:
-                    <a
-                      href="/cdn-cgi/l/email-protection#2645494852474552664d404a49510845494b"
-                      ><span
-                        className="__cf_email__"
-                        data-cfemail="9bf8f4f5effaf8efdbf0fdf7f4ecb5f8f4f6"
-                        >[email&#160;protected]</span
-                      ></a
-                    >
+                    <a href="/cdn-cgi/l/email-protection#2645494852474552664d404a49510845494b">
+                    <span className="__cf_email__">[email&#160;protected]</span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -37,8 +33,7 @@ return (
                 <div className="header-top-right">
                   <div className="user-login">
                     <a href="my-account.html"
-                      ><i className="flaticon-user-3"></i> My Account</a
-                    >
+                      ><i className="flaticon-user-3"></i> My Account</a>
                   </div>
                   <div className="select-lang">
                     <i className="flaticon-planet-earth"></i>
@@ -66,7 +61,7 @@ return (
           <div className="header-bottom">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-6 col-md-6 col-5">
-                <a href="index.html" class="logo">
+                <a href="index.html" className="logo">
                   <img className="logo-light"  src="..\assets\img\logo-white.png" alt="logo"/>
 
                   <img
@@ -167,7 +162,7 @@ return (
                                 >Terms &amp; Conditions</a>
                               
                             </li>
-                            <li><a href="404.html">404 Error</a></li>
+                            
                           </ul>
                         </li>
                         <li className="has-children">
