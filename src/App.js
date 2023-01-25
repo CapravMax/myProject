@@ -14,10 +14,10 @@ function App() {
   
   return (
     
-    <div className="container">
-            
-           
+    <>
+       
             <Routes>
+
              <Route element = {<Layout/>}>
                 <Route path="/" element={<Main />} />
                 <Route path="Services" element={<Services />} />
@@ -26,12 +26,11 @@ function App() {
                 <Route path="Shop" element = {<Shop/>} />
                 <Route path="*" element = {<Page404/>} />
               </Route>
-                
-        
+                        
               </Routes>
           
+</>
 
-</div>
   )
 }
 

@@ -1,22 +1,19 @@
 import Header from '../Header/Header';
 import Footer from "../Footer/Footer";
 import {Outlet} from 'react-router-dom';
+import './Layout.scss'
 
-
-
-
-
-const Layout = () =>  {
+function Layout ()  {
 
     return (
-    <div className={'wrapper'}>
-        <div className= {"layout"}>
+    <div className='wrapper'>
+        
         <Header />
        <main>
         <Outlet/>
        </main>
         <Footer />
-        </div>
+       
     </div>
     );
 }

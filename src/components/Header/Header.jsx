@@ -4,17 +4,16 @@ import './Header.scss'
 function Header () {
     
 return (
-<header className="header-wrap style1">
-        <div className="header-top bg-russian">
-          <div className="container">
-            <div className="close-header-top xl-none">
+<header className="header">
+
+        <div className="header_top">
+              <div className="header_top_close">
               <button type="button">
               <i className="las la-times"></i>
               </button>
             </div>
-            <div className="row align-items-center">
-              <div className="col-xl-8 col-lg-12">
-                <div className="header-top-left">
+                          
+                <div className="header_top_left">
                   <div className="contact-item">
                     <i className="flaticon-call"></i>
                     Make A Call:
@@ -28,9 +27,9 @@ return (
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="col-xl-4 col-lg-12">
-                <div className="header-top-right">
+              
+              
+                <div className="header_top_right">
                   <div className="user-login">
                     <a href="my-account.html"
                       ><i className="flaticon-user-3"></i> My Account</a>
@@ -53,12 +52,11 @@ return (
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
+              
+            
+          
         </div>
-        <div className="container">
-          <div className="header-bottom">
+          <div className="header_bottom">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-6 col-md-6 col-5">
                 <a href="index.html" className="logo">
@@ -282,7 +280,7 @@ return (
               </div>
             </div>
           </div>
-    </div>
+    
       </header>
 )
 };
