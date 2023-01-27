@@ -1,27 +1,71 @@
 
   .header {
+    
+    background: gray;
     display: flex;
     flex-direction: column;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 99;
-    transition: 0.4s;
+  
 
     &_top {
       display: flex;
       flex-direction: row;
-      align-content: space-between;
+      justify-content: space-around;
+      height: 30px;
+      background-color: #10012a;
+
+      &_left {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 500px;
+        color: #fff;
+        top: 5px;
+        left: 0;
+        font-size: 16px;
+        line-height: 0.8;
+      }
 
     }
 
     &_bottom {
       display: flex;
       flex-direction: row;
-      align-content: space-between;
+      justify-content: space-around;
+
+
+      &_logo {
+
+        &_light {
+          width: 10rem;
+
+        }
+      }
+
+      &_menu {
+        width: 70%;
+
+      &_list {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-around;
+               
+        &_sub-menu {
+        display: none;
+        list-style: none;
+    
+      }
     }
   }
+  }
+  }
 
+ a {
+  text-decoration: none;
+ }
   
     
   
