@@ -1,139 +1,137 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.scss'
+import footer_logo from '../../assets/img/logo_rus.png'
 
 function Footer () {
   
 
     return (
 // eslint-disable-next-line no-undef
-<footer className={'footer-bg'}>
-        <div className = {"footer-top pb-70"}>
-          <div className ="container">
-            <div className="row">
-              <div className="col-md-12">
-                <div className="footer-widget-wrap">
-                  <div className="footer-widget">
-                    {/* <a href="index.html" class="footer-logo"
-                      ><img src="" alt="Image"
-                    /></a> */}
-                    <p className="comp-desc">
+<footer className='footer'>
+        <div className = "footer_top">
+             
+                <div className="footer_top_wrap">
+                  <div className="footer_top_wrap_widget">
+                    <Link to ="/" className="footer_top_wrap_widget_logo">
+                      <img src={footer_logo} alt = 'logo'/>
+                      </Link> 
+                    <p className="footer_top_wrap_widget_about">
                       Lorem ipsum dolor elit amet, consetur quo elit, sed eiusmo
                       tempor corporis itaque incidunt ut labore et dolore magna
                       aliqua ipsum nostrum Lorem ipsum dolor sit suspend.
                     </p>
-                    <ul className="social-profile style2 list-style">
-                      {/* <li>
-                        <a target="_blank" href="https://vk.ru"
-                          ><i class="flaticon-facebook-app-symbol"></i>
-                        </a>
+                    <ul className="footer_top_wrap_widget_social_profile">
+                      <li>
+                        <Link to ="https://vk.ru" target="_blank"> 
+                          <i className="flaticon-facebook-app-symbol"></i>
+                        </Link>
                       </li>
                       <li>
-                        <a target="_blank" href="https://twitter.com">
-                          <i class="flaticon-twitter"></i>
-                        </a>
-                      </li> */}
-                      {/* <li>
-                        <a target="_blank" href="https://linkedin.com">
-                          <i class="flaticon-linkedin-1"></i>
-                        </a>
-                      </li> */}
-                      {/* <li>
-                        <a target="_blank" href="https://instagram.com">
-                          <i class="flaticon-instagram"></i>
-                        </a>
-                      </li> */}
+                        <Link to ="https://twitter.com" target="_blank">
+                          <i className="flaticon-twitter"></i>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="https://linkedin.com" target="_blank">
+                          <i className="flaticon-linkedin-1"></i>
+                        </Link>
+                      </li>
+                     <li>
+                        <Link to ="https://instagram.com" target="_blank">
+                          <i className="flaticon-instagram"></i>
+                        </Link>
+                      </li> 
                     </ul>
                   </div>
-                  <div className="footer-widget">
-                    <h4 className="footer-widget-title">Useful Link</h4>
-                    <ul className="footer-menu list-style">
+                  <div className="footer_top_wrap_widget">
+                    <h4 className="footer_top_wrap_widget_title">Useful Link</h4>
+                    <ul className="footer_top_wrap_widget_menu">
                       <li>
-                        <a href="about.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>About Us</a>
+                        <Link to ="About" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>О нас
+                          </Link>
                       </li>
                       <li>
-                        <a href="contact.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Contact Us</a>
+                        <Link to ="Contacts" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Контакты
+                          </Link>
                       </li>
                       <li>
-                        <a href="contact.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Help Desk</a>
-                                          </li>
+                        <Link to ="Help" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Помощь
+                        </Link>
+                     </li>
                       <li>
-                        <a href="privacy-policy.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Privacy
-                          Policy</a>
+                        <Link to ="Privicy" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Конфеденциальность
+                        </Link>
                       </li>
                       <li>
-                        <a href="terms-conditions.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Terms &amp;
-                          Conditions</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="footer-widget">
-                    <h4 className="footer-widget-title">Our Services</h4>
-                    <ul className="footer-menu list-style">
-                      <li>
-                        <a href="service-details.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>CCTV
-                          Installation</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Finger Print
-                          Access</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>HD IP
-                          Cameras</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Home
-                          Security</a>
-                      </li>
-                      <li>
-                        <a href="service-details.html" target="_blank"
-                          ><i className="flaticon-right-arrow-1"></i>Door Lock</a>
+                        <Link to ="terms-conditions.html" target="_blank"
+                          ><i className="flaticon-right-arrow-1"></i>Правила и условия
+                          </Link>
                       </li>
                     </ul>
                   </div>
-                  <div className="footer-widget">
-                    <h4 className="footer-widget-title">Contact us</h4>
-                    <div className="contact-item">
+                  <div className="footer_top_wrap_widget">
+                    <h4 className="footer_top_wrap_widget_title">Наши услуги</h4>
+                    <ul className="footer_top_wrap_widget_menu">
+                      <li>
+                        <Link to="Service" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Аналоговое видеонаблюдение
+                          </Link>
+                      </li>
+                      <li>
+                        <Link to ="Service" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Система контроля и управление доступом
+                          </Link>
+                      </li>
+                      <li>
+                        <Link to ="Service" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>IP видеонаблюдение</Link>
+                      </li>
+                      <li>
+                        <Link to ="Sevice" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Безопасный дом
+                          </Link>
+                      </li>
+                      <li>
+                        <Link to ="Service" target="_blank">
+                          <i className="flaticon-right-arrow-1"></i>Door Lock
+                          </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="footer_top_wrap_widget">
+                    <h4 className="footer_top_wrap_widget_title">Contact us</h4>
+                    <div className="footer_top_wrap_widget_contact">
                       <i className="flaticon-placeholder"></i>
-                      <p>Melborne Main St, VIC 3000, Melborne, Australia</p>
+                      <p>300279 г. Тула, ул. Кирова, д.135</p>
                     </div>
-                    <div className="contact-item">
+                    <div className="footer_top_wrap_widget_contact">
                       <i className="flaticon-message-1"></i>
-                      <a
-                        href="/cdn-cgi/l/email-protection#e28a878e8e8da289848e8d95cc818d8f"
-                        ><span
-                          className="__cf_email__"
+                      <Link to ="/cdn-cgi/l/email-protection#e28a878e8e8da289848e8d95cc818d8f">
+                        <span className="__cf_email__"
                           data-cfemail="177f727b7b78577c717b78603974787a"
                           >[email&#160;protected]</span>
-                          </a>
+                          </Link>
                     </div>
-                    <div className ="contact-item">
+                    <div className ="footer_top_wrap_widget_contact">
                       <i className="flaticon-phone-call"></i>
-                      <a href="tel:920023456789">+9200 (2) 345 6789</a>
+                      <a href="tel:+78003335101">+7 (800) 333-51-01</a>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <div className="copyright">
-            <p>
-              <span className="las la-copyright"></span>
-              
              
-                document.write(new Date().getFullYear());
-              
+            
+          
+        </div>
+        <div className="footer_bottom">
+          <div className="footer_bottom_copyright">
+            <p>
+              {/* <span className="las la-copyright">{document.write(new Date().getFullYear())}</span> */}
+               
               
             </p>
           </div>
