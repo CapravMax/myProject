@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;0,800;1,300&display=swap');
+
 .footer {
-  
-  background-image: url(../../assets/img/footer/footer-bg-1.jpg);
-        
+    background-image: url(../../assets/img/footer/footer-bg-1.jpg);
+    font-family: nunito, sans-serif;
+    font-weight: 400;
   &_top {
     
 
@@ -13,17 +15,23 @@
           position: relative;
           margin: 0 0 30px;
                 
-        :nth-child(1) {
+         &:nth-child(1) {
           width: 34%;
-          padding-right: 45px;
+          padding: 90px 1% 0 1%;
         }
-          :nth-child(2), :nth-child(3), :nth-child(4) {
+          &:nth-child(2), 
+          &:nth-child(3), 
+          &:nth-child(4) {
             width: 22%;
-            padding-left: 0;
+            padding: 90px 1% 01%;
           } 
           &_logo {
-            width: 10%;
             margin: 0 0 25px;
+            
+
+            & img {
+              width: 75%;
+            }
            
 
           }
@@ -31,6 +39,8 @@
           &_about {
             color: #fff;
             margin: 0 0 27px;
+            font-size: 16px;
+            line-height: 1.8;
 
           }
 
@@ -44,7 +54,7 @@
             color: #fff;
             margin: 0 0 35px;
             position: relative;
-            :after {
+            &:after {
               position: absolute;
               bottom: -10px;
               left: 0;
@@ -56,18 +66,19 @@
           }
 
           &_menu {
-            &li {
+            padding: 5px;
+            & li {
               margin: 0 0 15px;
-              :last-child {
+              &:last-child {
                 margin-bottom: 0;
               }
-              &a {
+              & a {
                 color: #fff;
                 position: relative;
-                margin-left: 30px;
+                
                 position: relative;
 
-                :after {
+                &:after {
                   position: absolute;
                   bottom: -2px;
                   left: 0;
@@ -80,11 +91,11 @@
                   transition: 0.4s;
                 }
 
-                :hover {
+                &:hover {
                   color: #d80758;
                 }
 
-                &i {
+                & i {
                   font-size: 15px;
                   position: absolute;
                   top: 0;
@@ -100,22 +111,21 @@
             position: relative;
             padding-left: 32px;
             margin: 0 0 20px;
-            &i {
+
+            &_holdplace {
               color: #d80758;
               position: absolute;
               top: 3px;
               left: 0;
               font-size: 18px;
-              &p, a {
+            }
+              & p {
                 color: #fff;
-                margin-bottom: 0;
-                :last-child {
-                  margin-bottom: 0;
-                }
-                :hover {
+                
+                &:hover {
                   color: #d80758;
 
-                  :after {
+                  &:after {
                     visibility: visible;
                     opacity: 1;
                     width: 100%;
@@ -123,12 +133,57 @@
                 }
 
               }
+
+              &_email {
+                color: #d80758;
+                position: absolute;
+                top: 3px;
+                left: 0;
+                font-size: 18px;
+              }
+                & span {
+                  color: #fff;
+                  
+                  &:hover {
+                    color: #d80758;
+  
+                    &:after {
+                      visibility: visible;
+                      opacity: 1;
+                      width: 100%;
+                    }
+                  }
+                }
+                  &_phone {
+                    color: #d80758;
+                    position: absolute;
+                    top: 3px;
+                    left: 0;
+                    font-size: 18px;
+                  }
+                    & span {
+                      color: #fff;
+                      
+                      &:hover {
+                        color: #d80758;
+      
+                        &:after {
+                          visibility: visible;
+                          opacity: 1;
+                          width: 100%;
+                        }
+                      }
+      
+                    }
+                
+
+
             }
 
           }
         }
       }
-    }
+    
 
     &_bottom {
       background-color: #fff;
@@ -139,11 +194,11 @@
         text-align: center;
         padding: 0 15px;
 
-      &p {
+      & p {
         color: #fff;
         margin: 0;
         }
-        &a {
+        & a {
           color: #d80758;
           font-weight: 600;
           
@@ -153,8 +208,8 @@
       }
 
     }
-
   }
+  
   
   
   @media only screen and (min-width: 992px) {

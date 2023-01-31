@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { TbMail, TbPhoneCall, TbUserCircle} from 'react-icons/tb';
 import './Header.scss'
 import lightLogo from '../../assets/img/full_logo_rus_slogan__for_videovtule_full.png'
 
@@ -11,28 +12,29 @@ function Header() {
 
         <div className="header_top_left">
 
-          <div className="header_top_left_contact">
-            Позвонить:
-            <Link to='tel:+78002555511'>
-              <span>+7 (800) 255-5511</span>
+                     
+            <Link to='tel:+78002555511' className="header_top_left_contact">
+            <TbPhoneCall className="header_top_left_contact_phone"/>
+              <span>  Позвонить: +7 (800) 255-5511</span>
             </Link>
-          </div>
-          <div className="header_top_left_contact">
-
-            Написать:
-            <Link to="/cdn-cgi/l/email-protection#2645494852474552664d404a49510845494b">
-              <span className="__cf_email__">[email&#160;protected]</span>
+         
+          
+            
+            <Link to="/cdn-cgi/l/email-protection#2645494852474552664d404a49510845494b" className="header_top_left_contact">
+            <TbMail className="header_top_left_contact_email"/>
+              <span >  Написать:[email&#160;protected]</span>
             </Link>
-          </div>
+          
         </div>
 
 
         <div className="header_top_right">
-          <div className="header_top_right_login">
-            <Link to="my-account.html">
-              Мой профиль
+          
+            <Link to="my-account.html" className="header_top_left_contact">
+            <TbUserCircle className='header_top_right_account'/>
+             <span>  Мой профиль</span> 
             </Link>
-          </div>
+          
 
         </div>
 
