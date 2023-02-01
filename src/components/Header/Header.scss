@@ -25,7 +25,7 @@
       width: 100vw;
 
       &_left {
-         display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         width: auto;
@@ -40,15 +40,7 @@
           padding-left: 27px;
           color: #fff;
       
-          &_phone{
-
-          }
-          &_mail{
-
-          }
-          & span {
-
-          }
+      
         }
       }
 
@@ -57,15 +49,20 @@
     &_bottom {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
+      
+      
+      
 
 
       &_logo {
+        width:20%;
+      margin:10px;
+      
 
-        &_light {
-          width: 10rem;
-
-        }
+      &_light{
+        width: 70%;
+      }
+        
       }
 
       &_menu {
@@ -75,11 +72,32 @@
         display: flex;
         flex-direction: row;
         list-style: none;
-        justify-content: space-around;
-               
+      justify-content: space-around;
+        
+        &:hover {
+          color: #d80758;
+        }   
+
+        &_item {
+          font-family: nunito, sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 26px;
+          color: #fff;
+          align-self: center;
+        
+        &:focus {
+          color: #d80758;
+        }   
+      }
+        
         &_sub-menu {
         display: none;
         list-style: none;
+        &:focus{
+          display: flex;
+          flex-direction: column;
+        }
     
       }
     }

@@ -1,8 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { TbMail, TbPhoneCall, TbUserCircle} from 'react-icons/tb';
-import './Header.scss'
-import lightLogo from '../../assets/img/full_logo_rus_slogan__for_videovtule_full.png'
+import {Search} from '../Search/Search';
+import './Header.scss';
+import lightLogo from '../../assets/img/full_logo_rus_slogan__for_videovtule_full.png';
 
 function Header() {
 
@@ -20,9 +21,9 @@ function Header() {
          
           
             
-            <Link to="/cdn-cgi/l/email-protection#2645494852474552664d404a49510845494b" className="header_top_left_contact">
+            <Link to="citadel-trade@yandex.ru" className="header_top_left_contact">
             <TbMail className="header_top_left_contact_email"/>
-              <span >  Написать:[email&#160;protected]</span>
+              <span >  Написать:citadel-trade@yandex.ru</span>
             </Link>
           
         </div>
@@ -43,23 +44,36 @@ function Header() {
       </div>
       <div className="header_bottom">
 
-        <a href="/" className="header_bottom_logo">
+        <Link to ="/" className="header_bottom_logo">
           <img className="header_bottom_logo_light" src={lightLogo} alt="light logo" />
-        </a>
+        </Link>
 
         <div className="header_bottom_menu">
 
           <ul className="header_bottom_menu_list">
 
-            <li className="">
+            <li className="header_bottom_menu_list_item">
               <Link to="Services">Услуги</Link>
 
             </li>
-            <li className="">
+            <li className="header_bottom_menu_list_item">
               <Link to="Projects">Проекты</Link>
 
             </li>
-            <li className="">
+
+            
+            <li className="header_bottom_menu_list_item">
+              <Link to="Shop">Магазин</Link>
+
+            </li>
+
+            
+            <li className="header_bottom_menu_list_item">
+              <Link to="Blog">Блог</Link>
+
+            </li>
+
+            <li className="header_bottom_menu_list_item">
               <Link to="AboutCompany">О компании</Link>
               <ul className="header_bottom_menu_list_sub-menu">
                 <li><Link to="about.html">О нас</Link></li>
@@ -77,9 +91,15 @@ function Header() {
             </li>
 
 
-            <li>
+            <li className="header_bottom_menu_list_item">
               <Link to="Contacts">Контакты</Link>
             </li>
+
+            <li>
+              <Search/>
+            </li>
+
+            
           </ul>
         </div>
 

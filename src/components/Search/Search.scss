@@ -1,0 +1,41 @@
+
+
+  .search {
+    position: relative;
+    max-width: 220px;
+    
+
+    &_button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    cursor: pointer;
+    }
+
+    &_form {
+      
+
+      & input {
+        width: 100%;
+        background: #f9f9f9;
+        height: 48px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        border: none;
+      }
+    }
+  }
+  .search.open {
+    top: 128px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .search-area .close-searchbox i {
+    color: #000;
+    font-size: 35px;
+  }
+  

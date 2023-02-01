@@ -1,9 +1,12 @@
 import React from "react";
+import {Section1} from "../section/section_1/section_1";
+
+
 
 function Main () {
 
     return (
-        <h1> Main</h1>
+        <Section1/>
     )
 }
 export default Main;

@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.scss'
 import footer_logo from '../../assets/img/full_logo_rus_slogan__for_videovtule_full.png';
-import {TbArrowNarrowRight,TbMapPin, TbMail, TbPhoneCall} from 'react-icons/tb';
+import {TbArrowNarrowRight,TbMapPin, TbMail, TbPhoneCall, TbCopyright} from 'react-icons/tb';
+import {SlSocialVkontakte, SlSocialTwitter, SlSocialLinkedin, SlSocialInstagram} from "react-icons/sl";
 function Footer () {
   
 
@@ -23,24 +24,24 @@ function Footer () {
                     </p>
                     <ul className="footer_top_wrap_widget_social_profile">
                       <li>
-                        <Link to ="https://vk.ru" target="_blank"> 
-                          <span className="material-icons"></span>
-                        </Link>
+                        <a href ="https://vk.ru" target="_blank" rel='noreferrer'> 
+                          <SlSocialVkontakte/>
+                        </a>
                       </li>
                       <li>
-                        <Link to ="https://twitter.com" target="_blank">
-                          <span className="material-icons"></span>
-                        </Link>
+                        <a href ="https://twitter.com" target="_blank" rel='noreferrer'>
+                          <SlSocialTwitter/>
+                        </a>
                       </li>
                       <li>
-                        <Link to="https://linkedin.com" target="_blank">
-                          <span className="material-icons"></span>
-                        </Link>
+                        <a href="https://linkedin.com" target="_blank" rel='noreferrer'>
+                          <SlSocialLinkedin/>
+                        </a>
                       </li>
                      <li>
-                        <Link to ="https://instagram.com" target="_blank">
-                          <span className="flaticon-instagram"></span>
-                        </Link>
+                        <a href ="https://instagram.com" target="_blank" rel='noreferrer'>
+                          <SlSocialInstagram/>
+                        </a>
                       </li> 
                     </ul>
                   </div>
@@ -129,7 +130,8 @@ function Footer () {
         <div className="footer_bottom">
           <div className="footer_bottom_copyright">
             <p>
-              {/* <span className="las la-copyright">{document.write(new Date().getFullYear())}</span> */}
+            <TbCopyright/>
+            <span className="copyright"> 2006 - {(new Date().getFullYear())} Тульский Дом Безопасности</span> 
                
               
             </p>

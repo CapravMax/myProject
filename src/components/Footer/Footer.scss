@@ -44,9 +44,34 @@
 
           }
 
-          &_sotial_profile {
-          color:#d80758
+          &_social_profile {
+            display: flex;
+            flex-direction: row;
+            margin: 0 8px 0 0;
+            list-style: none;
+            padding: 0;
 
+            & li {
+              display:flex;
+              flex-wrap: wrap;
+              background-color: #fff;
+              width: 30px;
+              height: 30px;
+              align-content: center;
+              justify-content: center;
+              color: #10012a;
+              border-radius: 5px;
+              margin: 0 5% 0 0;
+             
+            
+            &:hover {
+              border-radius: 50%;
+              background-color:#d80758;
+            }
+             & a {
+              height: 16px;
+             }
+            }
           }
 
           &_title {
@@ -186,17 +211,18 @@
     
 
     &_bottom {
-      background-color: #fff;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       padding: 20px 0;
 
       &_copyright {
         text-align: center;
         padding: 0 15px;
+        align-self: center;
 
       & p {
         color: #fff;
         margin: 0;
+        align-items: center;
         }
         & a {
           color: #d80758;
