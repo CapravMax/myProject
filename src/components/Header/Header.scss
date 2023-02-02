@@ -1,82 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;0,800;1,300&display=swap');
-  .header {
-    
-    background: gray;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    transition: 0.4s;
-    font-family: nunito, sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-  
-  
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;0,800;1,300&display=swap");
+.header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: 0.4s;
+  font-family: nunito, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
 
-    &_top {
+  &_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    background-color: #10012a;
+    position: static;
+    width: 100vw;
+
+    &_left {
       display: flex;
       flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      height: 30px;
-      background-color: #10012a;
-      position: static;
-      width: 100vw;
+      justify-content: space-between;
+      width: auto;
+      color: #fff;
+      top: 5px;
+      left: 0;
+      font-size: 14px;
+      line-height: 26px;
 
-      &_left {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: auto;
+      &_contact {
+        position: relative;
+        padding-left: 27px;
         color: #fff;
-        top: 5px;
-        left: 0;
-        font-size: 14px;
-        line-height: 26px;
-
-        &_contact {
-          position: relative;
-          padding-left: 27px;
-          color: #fff;
-      
-      
-        }
       }
+    }
+  }
 
+  &_bottom {
+    display: flex;
+    flex-direction: row;
+
+    &_logo {
+      width: 20%;
+      margin: 10px;
+
+      &_light {
+        width: 70%;
+      }
     }
 
-    &_bottom {
-      display: flex;
-      flex-direction: row;
-      
-      
-      
-
-
-      &_logo {
-        width:20%;
-      margin:10px;
-      
-
-      &_light{
-        width: 70%;
-      }
-        
-      }
-
-      &_menu {
-        width: 70%;
+    &_menu {
+      width: 70%;
 
       &_list {
         display: flex;
         flex-direction: row;
         list-style: none;
-      justify-content: space-around;
-        
+        justify-content: space-around;
+
         &:hover {
           color: #d80758;
-        }   
+        }
 
         &_item {
           font-family: nunito, sans-serif;
@@ -85,29 +72,25 @@
           line-height: 26px;
           color: #fff;
           align-self: center;
-        
-        &:focus {
-          color: #d80758;
-        }   
-      }
-        
-        &_sub-menu {
-        display: none;
-        list-style: none;
-        &:focus{
-          display: flex;
-          flex-direction: column;
+
+          &:focus {
+            color: #d80758;
+          }
         }
-    
+
+        &_sub-menu {
+          display: none;
+          list-style: none;
+          &:focus {
+            display: flex;
+            flex-direction: column;
+          }
+        }
       }
     }
   }
-  }
-  }
+}
 
- a {
+a {
   text-decoration: none;
- }
-  
-    
-  
+}
