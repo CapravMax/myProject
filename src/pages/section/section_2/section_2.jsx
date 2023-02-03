@@ -1,65 +1,60 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { TbHome, TbBriefcase, TbInfoCircle } from "react-icons/tb";
 import "./section_2.scss";
 
-function Section2 () {
-
-    return (
-        <section class="category-wrap pt-100 pb-75">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-lg-4 col-md-6">
-              <div class="category-card bg-russian">
-                <span class="cat-count">01</span>
-                <span class="cat-icon"><i class="flaticon-home-1"></i></span>
-                <div class="cat-info">
-                  <h3><a href="service-details.html">Home Security</a></h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, contur selisica do mod tempor
-                    incidunt ut labet aliqua at quis sit ipsum suspensse dolor
-                    sit amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="category-card bg-russian">
-                <span class="cat-count">02</span>
-                <span class="cat-icon"><i class="flaticon-portfolio"></i></span>
-                <div class="cat-info">
-                  <h3><a href="service-details.html">Business Security</a></h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, contur selisica do mod tempor
-                    incidunt ut labet aliqua at quis sit ipsum suspensse dolor
-                    sit amet.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="category-card bg-russian">
-                <span class="cat-count">03</span>
-                <span class="cat-icon"
-                  ><i class="flaticon-information"></i
-                ></span>
-                <div class="cat-info">
-                  <h3>
-                    <a href="service-details.html">Information Security</a>
-                  </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, contur selisica do mod tempor
-                    incidunt ut labet aliqua at quis sit ipsum suspensse dolor
-                    sit amet.
-                  </p>
-                </div>
-              </div>
-            </div>
+export function Section2() {
+  return (
+    <section className='block2'>
+      <div className='block2_row'>
+        <div className='block2_row_card'>
+          <span className='block2_row_card_icon'>
+            <TbHome className='block2_row_card_icon_end' />
+          </span>
+          <span className='block2_row_card_count'>01</span>
+          <div className='block2_row_card_info'>
+            <h3>
+              <Link to='service-details.html'>Home Security</Link>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, contur selisica do mod tempor incidunt
+              ut labet aliqua at quis sit ipsum suspensse dolor sit amet.
+            </p>
           </div>
         </div>
-      </section>
 
-    )
+        <div className='block2_row_card'>
+          <span className='block2_row_card_icon'>
+            <TbBriefcase className='block2_row_card_icon_end' />
+          </span>
+          <span className='block2_row_card_count'>02</span>
+          <div className='block2_row_card_info'>
+            <h3>
+              <Link to='service-details.html'>Business Security</Link>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, contur selisica do mod tempor incidunt
+              ut labet aliqua at quis sit ipsum suspensse dolor sit amet.
+            </p>
+          </div>
+        </div>
+
+        <div className='block2_row_card'>
+          <span className='block2_row_card_icon'>
+            <TbInfoCircle className='block2_row_card_icon_end' />
+          </span>
+          <span className='block2_row_card_count'>03</span>
+          <div className='block2_row_card_info'>
+            <h3>
+              <Link to='service-details.html'>Information Security</Link>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, contur selisica do mod tempor incidunt
+              ut labet aliqua at quis sit ipsum suspensse dolor sit amet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
-
-export default Section2
-
-

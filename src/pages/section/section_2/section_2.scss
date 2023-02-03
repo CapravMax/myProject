@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;0,800;1,300&display=swap");
+
+.block2 {
+  padding: 100px 0 75px 0;
+
+  &_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0;
+    max-width: 100%;
+
+    &_card {
+      display: grid;
+      width: 30%;
+      margin: 10%;
+      box-sizing: border-box;
+      padding: 25px 25px 22px;
+      position: relative;
+      border-radius: 5px;
+      margin: 0 0 25px;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      background-color: #10012a;
+      opacity: 0.9;
+
+      &:hover::after {
+        position: absolute;
+        bottom: 0;
+        left: 0%;
+        content: "";
+        background-color: #d80758;
+        width: 0%;
+        height: 0%;
+        z-index: -1;
+        transition: 0.4s;
+      }
+
+      &_count {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 70px;
+        line-height: 0.8;
+        font-weight: 800;
+        color: transparent;
+        -webkit-text-stroke: 2px rgba(255, 255, 255, 0.3);
+        text-shadow: none;
+      }
+
+      &_icon {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 5px;
+        transition: 0.4s;
+
+        &_end {
+          font-size: 40px;
+          line-height: 0.5;
+          color: #10012a;
+          -webkit-transition: 0.4s;
+          transition: 0.4s;
+        }
+      }
+
+      &_info {
+        margin-top: 22px;
+        color: #fff;
+        font-family: barlow condensed, sans-serif;
+
+        & h3 {
+          font-size: 24px;
+          margin-bottom: 15px;
+          line-height: 1.2;
+          font-weight: 600;
+        }
+
+        & p {
+          margin: 0;
+          opacity: 0.8;
+          font-size: 16px;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
