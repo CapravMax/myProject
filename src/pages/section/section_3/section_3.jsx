@@ -7,19 +7,19 @@ import cctv from "../../../assets/img/about/cctv-1.png"
 export function Section3() {
 
   return (
-    <section className='about-wrap style1 ptb-100 bg-f about-bg-1'>
-      <img src= {cctv} alt='videocamera' className='about-shape-1 lg-none'/>
-      <div className='container'>
-        <div className='row gx-5'>
-          <div className='col-xl-6'>
-            <div className='about-img-wrap'>
+    <section className='about'>
+      <img src= {cctv} alt='videocamera' className='about_cctv'/>
+      
+       
+          <div className='about_wrap'>
+            <div className='about_wrap_image'>
               <div className='about-img-1 bg-f'></div>
               <div className='about-img-2 bg-f'></div>
             </div>
-          </div>
-          <div className='col-xl-6'>
-            <div className='about-content'>
-              <div className='content-title style1 mb-15'>
+          
+          
+            <div className='about_wrap_content'>
+              <div className='about_wrap_content_title'>
                 <span>About us</span>
                 <h2>
                   Dedicated Team With Ontime Response The Leader In Protecting
@@ -31,7 +31,7 @@ export function Section3() {
                 delectus! Odit debitis aliquam esse hic vel ipsam id quisquam
                 assumenda dolorum.
               </p>
-              <ul className='feature-list style1 list-style'>
+              <ul className='about_wrap_content_list'>
                 <li>
                   <span>
                     <i className='flaticon-checkmark'></i>
@@ -71,8 +71,8 @@ export function Section3() {
               </Link>
             </div>
           </div>
-        </div>
-      </div>
+        
+      
     </section>
   );
 }
