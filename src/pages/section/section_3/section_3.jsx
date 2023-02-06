@@ -1,5 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Button} from "../../../components/Button/Button"
+import { TbCheckbox } from "react-icons/tb";
+
 import "./section_3.scss";
 
 import cctv from "../../../assets/img/about/cctv-1.png"
@@ -13,8 +15,8 @@ export function Section3() {
        
           <div className='about_wrap'>
             <div className='about_wrap_image'>
-              <div className='about-img-1 bg-f'></div>
-              <div className='about-img-2 bg-f'></div>
+              <div className='about_wrap_image_1'></div>
+              <div className='about_wrap_image_2'></div>
             </div>
           
           
@@ -33,10 +35,11 @@ export function Section3() {
               </p>
               <ul className='about_wrap_content_list'>
                 <li>
-                  <span>
-                    <i className='flaticon-checkmark'></i>
-                  </span>
-                  <h5>Schedule Your Tasks</h5>
+                  
+                  <h5><span>
+                    <TbCheckbox className = 'about_wrap_content_list_checkbox'/>
+                  </span> Schedule Your Tasks
+                  </h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectur dolor adicing elit,
                     sed do eiusmod sit tempor incidunt ut aliqua dolor amet sit
@@ -44,10 +47,10 @@ export function Section3() {
                   </p>
                 </li>
                 <li>
-                  <span>
-                    <i className='flaticon-checkmark'></i>
-                  </span>
-                  <h5>Manage By Control Panel</h5>
+                  
+                  <h5><span>
+                    <TbCheckbox className = 'about_wrap_content_list_checkbox'/>
+                  </span> Manage By Control Panel</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectur dolor adicing elit,
                     sed do eiusmod sit tempor incidunt ut aliqua dolor amet sit
@@ -55,10 +58,10 @@ export function Section3() {
                   </p>
                 </li>
                 <li>
-                  <span>
-                    <i className='flaticon-checkmark'></i>
-                  </span>
-                  <h5>Smarter Wireless Applications</h5>
+                  
+                  <h5><span>
+                    <TbCheckbox className = 'about_wrap_content_list_checkbox'/>
+                  </span> Smarter Wireless Applications</h5>
                   <p>
                     Lorem ipsum dolor sit amet, consectur dolor adicing elit,
                     sed do eiusmod sit tempor incidunt ut aliqua dolor amet sit
@@ -66,9 +69,7 @@ export function Section3() {
                   </p>
                 </li>
               </ul>
-              <Link to ='about.html' class='btn style1'>
-                <span>Learn More</span> <i className='flaticon-right-arrow-1'></i>
-              </Link>
+              <Button/>
             </div>
           </div>
         

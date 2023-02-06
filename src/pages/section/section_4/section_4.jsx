@@ -1,66 +1,67 @@
 import React from "react";
-import "./section_4.scss":
+import { Link } from "react-router-dom";
+
+import "./section_4.scss";
+
+import service_1 from "../../../assets/img/services/service-1.jpg"
+import service_2 from "../../../assets/img/services/service-2.jpg"
 
 function Section4 () {
     return (
-        <section class="service-wrap ptb-100">
-        <div class="container">
-          <div class="section-title style1 text-center mb-50">
+        <section className="service-wrap ptb-100">
+        <div className="container">
+          <div className="section-title style1 text-center mb-50">
             <span>What We Do</span>
             <h2>We Offer The Best Services</h2>
           </div>
-          <div class="row justify-content-center">
-            <div class="col-md-12">
-              <div class="service-slider-one owl-carousel">
-                <div class="item">
-                  <div class="service-card style1">
-                    <div class="service-img">
-                      <img
-                        src="assets/img/services/service-1.jpg"
-                        alt="Image"
+          <div className="row justify-content-center">
+            <div className="col-md-12">
+              <div className="service-slider-one owl-carousel">
+                <div className="item">
+                  <div className="service-card style1">
+                    <div className="service-img">
+                      <img  src={service_1} alt="service"
                       />
                     </div>
-                    <div class="service-info">
-                      <span class="service-blur-icon">
-                        <i class="flaticon-finger-print"></i
-                      ></span>
-                      <span class="service-icon">
-                        <i class="flaticon-finger-print"></i>
+                    <div className="service-info">
+                      <span className="service-blur-icon">
+                        <i className="flaticon-finger-print"></i>
                       </span>
-                      <h3 class="service-title">
-                        <a href="service-details.html">Finger Print Access</a>
+                      <span className="service-icon">
+                        <i className="flaticon-finger-print"></i>
+                      </span>
+                      <h3 className="service-title">
+                        <Link to="service-details.html">Finger Print Access</Link>
                       </h3>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur selised do
                         eiusmod tempor incididunt ut lab et aaliqua. Quis ipsum
                         suspendisse eiusmod
                       </p>
-                      <a href="service-details.html" class="btn style2"
-                        ><span>Learn More</span>
-                        <i class="flaticon-right-arrow-1"></i
-                      ></a>
+                      <Link to="service-details.html" class="btn style2">
+                        <span>Learn More</span>
+                        <i class="flaticon-right-arrow-1"></i>
+                      </Link>
                     </div>
                   </div>
                 </div>
-                <div class="item">
-                  <div class="service-card style1">
-                    <div class="service-img">
-                      <img
-                        src="assets/img/services/service-2.jpg"
-                        alt="Image"
+                <div className="item">
+                  <div className="service-card style1">
+                    <div className="service-img">
+                      <img src={service_2} alt="service"
                       />
                     </div>
                     <div class="service-info">
                       <span class="service-blur-icon">
-                        <i class="flaticon-face"></i
-                      ></span>
+                        <i class="flaticon-face"></i>
+                      </span>
                       <span class="service-icon">
                         <i class="flaticon-face"></i>
                       </span>
                       <h3 class="service-title">
-                        <a href="service-details.html"
-                          >Closed Circuit Cameras</a
-                        >
+                        <Link to ="service-details.html">
+                          Closed Circuit Cameras</Link>
+                        
                       </h3>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur selised do

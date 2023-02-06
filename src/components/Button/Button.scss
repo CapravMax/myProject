@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,700;0,800;1,300&display=swap");
+
+.button {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+
+    align-self: center;
+    background-color: #d80758;
+    color: #fff;
+    font-family: nunito, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 12px 25px;
+    text-align: center;
+    transition: 0.4s;
+    border: 2px solid transparent;
+
+    &:hover {
+        background-color:#10012a ;
+        border-color: #fff;
+        opacity: 0.9;
+    }
+
+    &_arrow {
+      align-items: center;
+      width: 35px;
+      height: 30px;
+      background: #fff;
+      border-radius: 4px;
+      text-align: center;
+      color: #10012a;
+      transition: 0.3s;
+      line-height: 0.8;
+      font-size: 16px;
+      margin: 0 0 0 10px;
+    
+    }
+  }

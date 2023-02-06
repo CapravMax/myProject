@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { TbArrowNarrowRight } from "react-icons/tb";
+import {Button} from "../../../components/Button/Button"
 import "./section_1.scss";
 
 import hero_slider_1 from "../../../assets/img/hero/hero-slider-1.png";
@@ -32,11 +32,9 @@ export function Section1() {
               suspendisse tempor incididunt labore et dolore magna aliqua. Quis
               ipsum eiusmod.
             </p>
-            <Link to='about.html' class='hero_overlay_block_content_learn'>
-              <span>Learn More</span>
-              <TbArrowNarrowRight className="hero_overlay_block_content_learn_arrow"/>
+            <Button/>
               
-            </Link>
+            
 
             
           </div>
