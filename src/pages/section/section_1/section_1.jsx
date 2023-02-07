@@ -39,62 +39,62 @@ export function Section1() {
             
           </div>
 
-          <div className='hero_overlay_block_tab'>
-              <div className='hero_overlay_block_tab_pane' id='tab_1' role='tabpanel'>
-                <div className='hero_overlay_block_tab_pane_item'>
+          <div className ='hero_overlay_block_tab'>
+              <div className ='hero_overlay_block_tab_pane' id='tab_1' role='tabpanel'>
+                <div className ='hero_overlay_block_tab_pane_item'>
                   <img src={hero_slider_1} alt='hero slider' />
                 </div>
               </div>
               <div
-                className='hhero_overlay_block_tab_pane_item_fade'
+                className ='hero_overlay_block_tab_pane_item_fade'
                 id='tab_2'
                 role='tabpanel'>
-                <div className='hero_overlay_block_tab_pane_item'>
+                <div className ='hero_overlay_block_tab_pane_item'>
                   <img src={hero_slider_2} alt='hero slider' />
                 </div>
               </div>
               <div
-                className='hero_overlay_block_tab_pane_item_fade'
+                className ='hero_overlay_block_tab_pane_item_fade'
                 id='tab_3'
                 role='tabpanel'>
-                <div className='hero_overlay_block_tab_pane_item'>
-                  <img src={hero_slider_3} alt='hero-slider' />
+                <div className ='hero_overlay_block_tab_pane_item'>
+                  <img src={hero_slider_3} alt='hero-slider'/>
                 </div>
               </div>
             </div>
         </div>
-        <div className='hero_overlay_tablist'>
+        <div className ='hero_overlay_tablist'>
           <span>
             Thumbnails <TbArrowNarrowRight/>
           </span>
-          <ul className='hero_overlay_tablist_nav' role='tablist'>
-            <li className='hero_overlay_tablist_nav_items'>
+          <ul className ='hero_overlay_tablist_nav' role='tablist'>
+            <li className ='hero_overlay_tablist_nav_items'>
               <button
-                className='hero_overlay_tablist_nav_items_link active'
-                data-bs-toggle='tab'
-                data-bs-target='#tab_1'
-                type='button'
-                role='tab'>
-                <img src={hero_thumb_1} alt='hero-thumb' />
+                className ='hero_overlay_tablist_nav_items_link active'
+                data-bs-toggle ='tab'
+                data-bs-target ='#tab_1'
+                type ='button'
+                role ='tab'>
+                <img src = {hero_thumb_1} alt='hero-thumb'/>
               </button>
             </li>
-            <li class='hero_overlay_tablist_nav_items'>
+            <li className ='hero_overlay_tablist_nav_items'>
               <button
-                className='hero_overlay_tablist_nav_items_link'
+                className ='hero_overlay_tablist_nav_items_link'
                 data-bs-toggle='tab'
                 data-bs-target='#tab_2'
-                type='button'
-                role='tab'>
-                <img src={hero_thumb_3} alt='hero thumb' />
+                type ='button'
+                role ='tab'>
+                <img src = {hero_thumb_3} alt='hero thumb' />
               </button>
             </li>
-            <li className='hero_overlay_tablist_nav_items'>
+            <li className ='hero_overlay_tablist_nav_items'>
               <button
-                className='hero_overlay_tablist_nav_items_link'
-                data-bs-toggle='tab'
-                data-bs-target='#tab_3'
-                type='button'
-                role='tab'>
+                className ='hero_overlay_tablist_nav_items_link'
+                data-bs-toggle ='tab'
+                data-bs-target ='#tab_3'
+                type ='button'
+                role ='tab'>
                 <img src={hero_thumb_2} alt='hero thumb' />
               </button>
             </li>
